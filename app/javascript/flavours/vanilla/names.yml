@@ -5,7 +5,7 @@ en:
       name: Vanilla Mastodon
   skins:
     vanilla:
-      default: Default
+      default: Mastodon (Rich Dark Mint Flavor)
 pl:
   flavours:
     vanilla:

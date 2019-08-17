@@ -8,11 +8,11 @@ $gold-star: #ca8f04;        // Dark Goldenrod
 
 $red-bookmark: $warning-red;
 
-// Kafuka Specific Colors. (Temp Dark Mint Theme) Color names may come later.
-$classic-base-color: #111;
-$classic-primary-color: #9bc8ae;
-$classic-secondary-color: #edfcf5;
-$classic-highlight-color: #17bf63;
+// Values from the classic Mastodon UI
+$classic-base-color: #282c37;         // Midnight Express
+$classic-primary-color: #9baec8;      // Echo Blue
+$classic-secondary-color: #d9e1e8;    // Pattens Blue
+$classic-highlight-color: #2b90d9;    // Summer Sky
 
 // Variables for defaults in UI
 $base-shadow-color: $black !default;
