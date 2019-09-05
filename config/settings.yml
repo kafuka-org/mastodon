@@ -63,6 +63,10 @@ defaults: &defaults
     - administrator
     - mod
     - moderator
+    - kafuka
+    - noriko
+    - rika
+    - nyonya
   disallowed_hashtags: # space separated string or list of hashtags without the hash
   bootstrap_timeline_accounts: ''
   activity_api_enabled: true
