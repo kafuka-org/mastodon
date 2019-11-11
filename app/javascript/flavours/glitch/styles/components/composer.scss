@@ -143,6 +143,7 @@
     overflow: visible;
     white-space: pre-wrap;
     padding-top: 5px;
+    overflow: hidden;
 
     p, pre, blockquote {
       margin-bottom: 20px;
@@ -248,6 +249,7 @@
 .compose-form__autosuggest-wrapper,
 .autosuggest-input {
   position: relative;
+  width: 100%;
 
   label {
     .autosuggest-textarea__textarea {
