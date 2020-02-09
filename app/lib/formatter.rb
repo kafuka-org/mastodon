@@ -77,6 +77,8 @@ class Formatter
 
   def reformat(html)
     sanitize(html, Sanitize::Config::MASTODON_STRICT)
+  rescue ArgumentError
+    ''
   end
 
   def plaintext(status)
@@ -308,8 +310,9 @@ class Formatter
     end
 
     standard = Extractor.extract_entities_with_indices(text, options)
+    extra = Extractor.extract_extra_uris_with_indices(text, options)
 
-    Extractor.remove_overlapping_entities(special + standard)
+    Extractor.remove_overlapping_entities(special + standard + extra)
   end
 
   def html_friendly_extractor(html, options = {})
@@ -370,7 +373,7 @@ class Formatter
 
   def link_html(url)
     url    = Addressable::URI.parse(url).to_s
-    prefix = url.match(/\Ahttps?:\/\/(www\.)?/).to_s
+    prefix = url.match(/\A(https?:\/\/(www\.)?|xmpp:)/).to_s
     text   = url[prefix.length, 30]
     suffix = url[prefix.length + 30..-1]
     cutoff = url[prefix.length..-1].length > 30
