@@ -56,7 +56,7 @@ ja:
         domain: 登録するとこのサーバーからデータを受信したり、このドメインから受信するデータを処理して保存できるようになります
       email_domain_block:
         domain: メールアドレスのドメイン名および、名前解決したMXレコード、IPアドレスを指定できます。ユーザー登録時にこれらをチェックし、該当する場合はユーザー登録を拒否します。
-        with_dns_records: 指定したドメインのDNSレコードを取得し、その結果もブラックリストに登録されます
+        with_dns_records: 指定したドメインのDNSレコードを取得し、その結果もメールドメインブロックに登録されます
       featured_tag:
         name: 'これらを使うといいかもしれません:'
       form_challenge:
@@ -140,7 +140,6 @@ ja:
         setting_display_media_hide_all: 非表示
         setting_display_media_show_all: 表示
         setting_expand_spoilers: 閲覧注意としてマークされたトゥートを常に展開する
-        setting_favourite_modal: お気に入りをする前に確認ダイアログを表示する
         setting_hide_network: 繋がりを隠す
         setting_noindex: 検索エンジンによるインデックスを拒否する
         setting_reduce_motion: アニメーションの動きを減らす
@@ -152,6 +151,7 @@ ja:
         setting_use_blurhash: 非表示のメディアを色付きのぼかしで表示する
         setting_use_pending_items: 手動更新モード
         severity: 重大性
+        sign_in_token_attempt: セキュリティコード
         type: インポートする項目
         username: ユーザー名
         username_or_email: ユーザー名またはメールアドレス
